@@ -1,0 +1,27 @@
+{
+    "name": "erc20-hardhat-demo",
+    "private": true,
+    "type": "module",
+    "version": "0.0.0",
+    "description": "ERC20 Hardhat Demo",
+    "main": "index.js",
+    "scripts": {
+        "test": "npx hardhat test",
+        "console:hederatestnet": "npx hardhat console --network hederatestnet",
+        "console": "npm run console:hederatestnet",
+        "deploy:hederatestnet": "npx hardhat run --network hederatestnet scripts/deploy.js",
+        "deploy": "npm run deploy:hederatestnet"
+    },
+    "keywords": [
+        "hedera"
+    ],
+    "author": "bguiz",
+    "license": "MIT",
+    "devDependencies": {
+        "@nomicfoundation/hardhat-chai-matchers": "2.0.3",
+        "@nomicfoundation/hardhat-toolbox": "4.0.0",
+        "@openzeppelin/contracts": "5.0.1",
+        "dotenv": "16.3.1",
+        "hardhat": "2.19.4"
+    }
+}
