@@ -68,6 +68,9 @@ const hardhatConfig = {
     apiUrl: 'https://server-verify.hashscan.io',
     browserUrl: 'https://repository-verify.hashscan.io',
   },
+  etherscan: {
+    enabled: false,
+  },
   mocha: {
     timeout: 6_000_000,
   },

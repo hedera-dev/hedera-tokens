@@ -6,11 +6,14 @@
     "description": "ERC20 Hardhat Demo",
     "main": "index.js",
     "scripts": {
+        "compile": "npx hardhat compile",
         "test": "npx hardhat test",
         "console:hederatestnet": "npx hardhat console --network hederatestnet",
         "console": "npm run console:hederatestnet",
         "deploy:hederatestnet": "npx hardhat run --network hederatestnet scripts/deploy.js",
-        "deploy": "npm run deploy:hederatestnet"
+        "deploy": "npm run deploy:hederatestnet",
+        "verify:hederatestnet": "npx hardhat run --network hederatestnet scripts/verify.js",
+        "verify": "npm run verify:hederatestnet"
     },
     "keywords": [
         "hedera"
