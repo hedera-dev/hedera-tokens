@@ -18,7 +18,32 @@ whereas deployment and verification occur on Hedera Testnet (a public network).
 This project has been designed as a minimal example demonstration;
 and a starting point for projects.
 
-## Compile 
+## Set up
+
+```shell
+node -v
+# v20.6.1
+```
+
+- Note that you will need NodeJs v20 or higher.
+
+```shell
+cp .env.example .env
+```
+
+- Set the values of `OPERATOR_ID` and `OPERATOR_KEY` to an account from [Hedera Portal](https://portal.hedera.com/login).
+- Set the value of `BIP39_SEED_PHRASE` by generating your own seed phrase.
+  - Option 1: `npx mnemonics@1.1.3`
+  - Option 2: [`iancoleman.io/bip39`](https://iancoleman.io/bip39/)
+- Set the value of `RPC_URL_HEDERATESTNET` as a JSON-RPC endpoint for Hedera Testnet.
+  - Multiple options described at ["How to Connect to Hedera Networks Over RPC"
+](https://docs.hedera.com/hedera/tutorials/more-tutorials/json-rpc-connections)
+
+```shell
+npm install
+```
+
+## Compile
 
 ```shell
 npm run compile
