@@ -1,7 +1,7 @@
-# ERC20 Hardhat Demo
+# ERC721 Hardhat Demo
 
-This project contains a [fungible token](https://eips.ethereum.org/EIPS/eip-20) implementation
-that inherits from [OpenZeppelin's ERC20 implementation](https://docs.openzeppelin.com/contracts/5.x/api/token/erc20).
+This project contains a [non-fungible token](https://eips.ethereum.org/EIPS/eip-721) implementation
+that inherits from [OpenZeppelin's ERC721 implementation](https://docs.openzeppelin.com/contracts/5.x/api/token/erc721).
 
 It uses the hardhat development framework to:
 
@@ -41,7 +41,6 @@ cp .env.example .env
 ```shell
 npm install
 ```
-
 ## Compile
 
 ```shell
