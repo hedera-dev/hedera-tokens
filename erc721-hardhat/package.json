@@ -6,6 +6,7 @@
     "description": "ERC20 Hardhat Demo",
     "main": "index.js",
     "scripts": {
+        "clean": "rm -rf ./artifacts ./cache",
         "compile": "npx hardhat compile",
         "test": "npx hardhat test",
         "console:hederatestnet": "npx hardhat console --network hederatestnet",
