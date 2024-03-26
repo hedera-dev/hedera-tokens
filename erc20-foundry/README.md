@@ -58,7 +58,7 @@ cp .env.example .env
 
   Fund your account with test HBAR by going to the [faucet](https://portal.hedera.com/faucet)
 
-- Set the value of `RPC_URL_HEDERATESTNET` as a JSON-RPC endpoint for Hedera Testnet.
+- Set the value of `RPC_URL_HEDERATESTNET` in `erc20-foundry/.env` as a JSON-RPC endpoint for Hedera Testnet.
   - Multiple options described at ["How to Connect to Hedera Networks Over RPC"
 ](https://docs.hedera.com/hedera/tutorials/more-tutorials/json-rpc-connections)
 
@@ -76,5 +76,10 @@ forge test
 ## Deploy and Verify
 
 ```shell
-forge script script/Deploy.s.sol --rpc-url h_testnet --broadcast --verify --verifier sourcify --verifier-url https://server-verify.hashscan.io
+forge script script/Deploy.s.sol \
+  --rpc-url h_testnet \
+  --broadcast \
+  --verify \
+  --verifier sourcify \
+  --verifier-url "https://server-verify.hashscan.io"
 ```
